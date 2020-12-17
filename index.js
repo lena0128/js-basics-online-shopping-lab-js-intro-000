@@ -61,7 +61,6 @@ var keys = Object.keys(cart[i]);
     } else if(cart[i][keys[0]] !== item) {
       alert("That item is not in your cart.");
 }
-  return cart;
 }
 }
 
