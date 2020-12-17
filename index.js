@@ -18,7 +18,26 @@ return `${item} has been added to your cart.`;
 }
 
 function viewCart() {
-  // write your code here
+  if (cart.length === 0) {
+    return "Your shopping cart is empty.";
+  } else {
+    var myCart = [];
+  for (let i = 0; i < cart.length; i++) {
+    var myItems = `${cart[i].itemName} at $${cart[i].itemPrice}`;
+    myCart.push(myItems);
+  }
+  var myString = "In your cart, you have ";
+    if (myCart.length === 1) {
+    myString = `${myString}${myCart}.`;
+  } else if (myCart.length === 2) {
+    myString += (myCart[0] + ", and " + myCart[1] + ".");
+  } else if (myCart.length > 2){
+    var lastItem = myCart.pop();
+    var otherItems = myCart.join(", ");
+    myString += (otherItems + ", and " + lastItem + ".");
+  }
+  return myString;
+}
 }
 
 function total() {
