@@ -69,7 +69,7 @@ function placeOrder(cardNumber) {
   var myTotal = total();
   total();
   if(cardNumber) {
-    cart =[0];
+    cart =[];
     return `Your total cost is $${myTotal}, which will be charged to the card ${cardNumber}.`;
   } else {
     return `Sorry, we don't have a credit card on file for you.`;
