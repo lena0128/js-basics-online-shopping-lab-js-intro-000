@@ -65,7 +65,7 @@ return "That item is not in your cart.";
 
 
 function placeOrder(cardNumber) {
-  // write your code here
+  // First of all, calculate the total before we empty the cart!
   var myTotal = total();
   total();
   if(cardNumber) {
