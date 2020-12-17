@@ -66,9 +66,10 @@ return "That item is not in your cart.";
 
 function placeOrder(cardNumber) {
   // write your code here
+  var cardNumber = "";
   var emptyArray = [];
   if(cardNumber === undifined) {
-    return "Sorry, we don't have a credit card on file for you.";
+    return `Sorry, we don't have a credit card on file for you.`;
   } else {
     return `Your total coast is$${total()}, which will be charged to the card ${cardNumber}.`;
     setCart(emptyArray);
