@@ -59,7 +59,7 @@ var keys = Object.keys(cart[i]);
       cart.splice(i, 1);
       return cart;
     } else if([keys[0] !== item) {
-      alert("That item is not in your cart.");
+      return "That item is not in your cart.";
 }
 }
 }
