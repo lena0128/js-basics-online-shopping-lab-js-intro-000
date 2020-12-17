@@ -63,6 +63,7 @@ var item = cart[i][keys[0]];
       alert("That item is not in your cart.");
 }
 }
+}
 
 function placeOrder(cardNumber) {
   // write your code here
