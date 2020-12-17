@@ -59,8 +59,7 @@ var keys = Object.keys(cart[i]);
       cart.splice(i, 1);
       return cart;
     } else {
-      var message = "That item is not in your cart.";
-      alert(message);
+      alert("That item is not in your cart.");
 }
 }
 }
