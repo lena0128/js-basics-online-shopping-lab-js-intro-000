@@ -66,8 +66,8 @@ return "That item is not in your cart.";
 
 function placeOrder(cardNumber) {
   // write your code here
+  total();
   if(cardNumber) {
-    total();
     cart.length = 0;
     return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`;
   } else {
